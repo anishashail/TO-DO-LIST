@@ -1,0 +1,148 @@
+/* General styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f8f9fa, #dae2f8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container styling */
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    text-align: center;
+}
+
+/* Title styling */
+h1 {
+    font-size: 2em;
+    color: #495057;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Input section */
+.input-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+input {
+    flex: 1;
+    padding: 10px 15px;
+    border: 2px solid #dee2e6;
+    border-radius: 25px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: #74c0fc;
+}
+
+button {
+    width: 50px;
+    height: 50px;
+    background-color: #74c0fc;
+    border: none;
+    border-radius: 50%;
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 10px 20px rgba(116, 192, 252, 0.4);
+}
+
+button:hover {
+    background-color: #4dabf7;
+    box-shadow: 0 12px 22px rgba(116, 192, 252, 0.5);
+}
+
+button:focus {
+    outline: none;
+}
+
+/* Task list styling */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #f1f3f5;
+    padding: 15px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+li:hover {
+    background-color: #dee2e6;
+}
+
+li span {
+    font-size: 1.1em;
+    color: #495057;
+    flex-grow: 1;
+    text-align: left;
+}
+
+.delete-btn {
+    background-color: #ff6b6b;
+    width: 100px;
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 8px 16px rgba(255, 107, 107, 0.4);
+}
+
+.delete-btn:hover {
+    background-color: #fa5252;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 480px) {
+    .container {
+        width: 90%;
+    }
+
+    input {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 1.2em;
+    }
+
+    li {
+        padding: 10px;
+    }
+
+    .delete-btn {
+        padding: 8px;
+    }
+}
